@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Users, Briefcase, LayoutDashboard, UserCheck } from 'lucide-react'
 import clsx from 'clsx'
@@ -19,15 +20,7 @@ export default function Sidebar() {
     <aside className="w-56 flex-shrink-0 flex flex-col h-full" style={{ backgroundColor: '#001F5A' }}>
       {/* Logo */}
       <div className="px-5 py-6 border-b border-white/10">
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm" style={{ backgroundColor: '#00A3A1' }}>
-            VF
-          </div>
-          <div>
-            <p className="text-white font-semibold text-sm leading-tight">VersaFile</p>
-            <p className="text-white/50 text-xs leading-tight">Client Hub</p>
-          </div>
-        </div>
+        <Image src="/versafile_rev.png" alt="VersaFile" width={160} height={32} className="h-7 w-auto" />
       </div>
 
       {/* Nav */}

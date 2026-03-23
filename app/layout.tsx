@@ -5,6 +5,9 @@ import Sidebar from "@/components/Sidebar";
 export const metadata: Metadata = {
   title: "VFC Client Hub",
   description: "VersaFile Consulting Group — Internal Client Intelligence Hub",
+  icons: {
+    icon: "/vfc-favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
